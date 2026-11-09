@@ -1,0 +1,7 @@
+# Copy to terraform.tfvars and fill in. terraform.tfvars is gitignored.
+
+region             = "ap-southeast-1"
+state_bucket_name  = "devops-lab-tfstate-CHANGE-ME" # must be globally unique
+lock_table_name    = "devops-lab-tf-locks"
+monthly_budget_usd = 20
+budget_alert_email = "you@example.com"

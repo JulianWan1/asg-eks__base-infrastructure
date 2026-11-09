@@ -1,0 +1,16 @@
+# Terraform working dir and plan files
+.terraform/
+*.tfplan
+
+# Real variable values (may contain your email / bucket name)
+terraform.tfvars
+
+# Bootstrap state is LOCAL by design (chicken-and-egg — see README).
+# For a solo lab you MAY choose to commit it instead so you never lose the
+# pointer to your permanent resources; if so, delete these two lines. Never
+# commit state containing real secrets to a public repo.
+*.tfstate
+*.tfstate.*
+
+# DO commit .terraform.lock.hcl (provider dependency lock) — it is not matched
+# by the rules above and should be version-controlled.
